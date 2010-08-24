@@ -1,0 +1,91 @@
+On Thu, Jul 29, 2010 at 09:50:39PM -0400, Giovanni Tumiati wrote:
+> Thomas Adam wrote:
+> >I toy with this idea at least three times a year, which must mean something.
+> >:)  I know I've asked this in the past of most people, but I will ask it
+> >again -- not so much in terms of the particulars -- but if there's enough
+> >interest.
+> >
+> >Would a book on FVWM be useful?
+> I hope there *is* enough interest because an FVWM book would be
+> useful to me.
+> However I would not necessarily need a paper book - a pdf (or some
+> such) version would be adequate,
+> although NoStarch press books have been reasonable.
+
+The distribution format is irrespective of whether it's published or not,
+and most publishers are keen on electronic formats these days, as well as
+paper editions.
+
+> >I am thinking more in terms of discussing how/what to do with FVWM, and
+> >what's needed to achieve it.  The standards behind how FVWM manages windows,
+> >and how FVWM allows the user to control what this means, etc.
+> That kind of book would help current users certainly, and may also
+> elicit interest in others - is one of the
+> objectives to have the book expand the user base?
+
+Hell, no.  I have no interest in attracting more users; merely documenting
+this for those who already know about FVWM.
+
+> Do you have an idea what the table of contents would contain
+> (roughly of course)?
+
+* Preface...
+* Introduction / Explanation as to what window management is (c.f. with
+  role within X11, etc.)
+* History of FVWM (via comparison with other WMs). 	Explain what FVWM
+  is, and why it came about.
+* Components of FVWM
+ 	- Installation (via distributions).
+ 	- Via vanilla tarball.
+* Comparison of FVWM 2.4.X / 2.5.X (or just run with 2.5.X and where
+  necessary add an addendum/footnote where there's any differences in
+  syntax.
+* Setup
+ 	- Base setup from tarball (FvwmFormSetup).
+ 	  (Distros tend not to provide pre-built .fvwm2rc files in lieu of
+	  this).
+	- Example .fvwm2rc files distributed with the tarball (	)
+
+	- fvwm-{themes,crystal} - but see later chapters	
+* Generic Concepts
+ 	- Command-line switches to FVWM.
+ 	- Structure / explanation of .fvwm2rc file with rationale for
+ 	  recommendation as to why it is that way. 	(Some aspects of the
+      file are order dependant still).
+* Functions
+ 	- Builtin functions (a la ConfigFvwmDefaults).
+ 	- User-defined functions (a la StartFunction).
+* Context
+ 	- Window
+ 	- Menu
+ 	- Function
+ 	- Changing contexts (forcing contexts therein for some
+      operations).
+* Modules
+ 	- Standard
+ 	- Non/Standard.
+ 	| Things like FvwmEvent, FvwmScript, FvwmButtons ought to get the
+ 	  shit documented out of them.
+* Decors
+ 	- Styles.
+ 	- Vectors.
+ 	- Pixmaps.
+* Focus policies.
+* Bindings.
+ 	- Key
+ 	- Mouse
+* Window Operations
+ 	- Moving
+	- Resizing
+ 	- Maximising
+ 	- etc...
+* "Scripting"
+ 	- PipeRead.
+ 	- Perllib
+ 	- rubylib (:P -- perhaps released as part of the book	)
+
+-- Thomas Adam
+
+-- 
+"Deep in my heart I wish I was wrong.  But deep in my heart I know I am
+not." -- Morrissey ("Girl Least Likely To" -- off of Viva Hate.)
