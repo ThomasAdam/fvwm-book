@@ -14,10 +14,35 @@
 
 \makeindex[lines]
 
+\newlength{\drop}
+\newcommand*{\titleGM}{\begingroup% Gentle Madness
+\drop = 0.1\textheight
+\vspace*{\baselineskip}
+\vfill
+  \hbox{%
+  \hspace*{0.2\textwidth}%
+  \rule{1pt}{\textheight}
+  \hspace*{0.05\textwidth}%
+  \parbox[b]{0.75\textwidth}{
+  \vbox{%
+    \vspace{\drop}
+    {\noindent\HUGE\bfseries A\\[0.5\baselineskip]
+               Little}\\[2\baselineskip]
+    {\Large\itshape FVWM Book}\\[4\baselineskip]
+    {\Large Thomas Adam}\par
+    \vspace{0.5\textheight}
+    {\noindent}\\[\baselineskip]
+    }% end of vbox
+    }% end of parbox
+    }% end of hbox
+\vfill
+\null
+\endgroup}
+
 \begin{document}
 
 \chapterstyle{lyhne}
-\maketitle
+\titleGM
 \clearpage
 \tableofcontents
 
